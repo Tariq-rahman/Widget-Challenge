@@ -31,5 +31,10 @@ you can test out different sizes of packets and widgets by playing around with t
 
 The other way of running this is to download the repo and run the `script.php` from the command line.
 
+When assigning the pack sizes, they must be in ascending order.
+
+- Like this `Widget(152, [250,500,1000,2000,5000])`
+- Not like this `Widget(152, [500,400,300,200,100])`
+
 ## Output 
 The output of the script uses `print_r` to print out the array so it will look something like this `Array ( [5000] => 2 [2000] => 1 [500] => 1)` where the array key is the packet size and the value is the quantity of that packet size.
